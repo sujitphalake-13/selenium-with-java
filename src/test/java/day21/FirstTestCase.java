@@ -8,7 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 /*
  Test Case
  ----------
- 1) Launch browser (chrome/Edge/Firefox)  ----> Recommand to chose Chrome browser
+ 1) Launch browser (chrome/Edge/Firefox)  ----> Recommand to choose Chrome browser
  2) Open URL https://www.opencart.com/
  3) Validate title should be "OpenCart - Open Source Shopping Cart Solution"
  4) Close browser
