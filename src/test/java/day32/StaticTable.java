@@ -48,7 +48,7 @@ public class StaticTable {
 	    */
 	    
 	    // 5. Print book names whose author is Mukesh
-	    
+	    /*
 	    for( int r = 2 ; r <= rows; r++ ) {
 	    	String authorName = driver.findElement(By.xpath("//table[@name='BookTable']//tr["+r+"]//td[2]")).getText();
 	    	
@@ -57,6 +57,17 @@ public class StaticTable {
 	    		System.out.print(book+"\t");
 	    	}
 	    }
+	    */
+	    
+	    // 6. Find Total price for books
+	    int TotalPrice = 0;
+	    for( int r = 2 ; r <= rows ; r++ ) {
+	    	String price = driver.findElement(By.xpath("//table[@name='BookTable']//tr["+r+"]//td[4]")).getText(); 
+	    	
+	    	TotalPrice = TotalPrice + Integer.parseInt(price);
+	    }
+	    
+	    System.out.println("Total Price of the books :"+TotalPrice);
 	    
 	}
 
