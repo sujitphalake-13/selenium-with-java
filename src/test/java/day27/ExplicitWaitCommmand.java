@@ -13,7 +13,7 @@ public class ExplicitWaitCommmand {
 
 	public static void main(String[] args) {
 		
-		 // Launch the browser (chrome)
+		// Launch the browser (chrome)
         WebDriver driver = new ChromeDriver();
         
         WebDriverWait myWait = new WebDriverWait(driver, Duration.ofSeconds(5));   // Declaration
@@ -41,6 +41,7 @@ public class ExplicitWaitCommmand {
         driver.findElement(By.xpath("//button[normalize-space()='Login']")).click();
         
         //driver.close();  // close browser
+        
 	}
 
 }
