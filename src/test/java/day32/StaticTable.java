@@ -41,7 +41,7 @@ public class StaticTable {
 	    	for( int c = 1 ; c <= cols ; c++ ){   // cols   //table[@name='BookTable']//tr[r]//td[c]  we cannot write like this
 	    		
 	    		String value = driver.findElement(By.xpath("//table[@name='BookTable']//tr["+r+"]//td["+c+"]")).getText();
-	    		 System.out.print(value+"\t");
+	    		System.out.print(value+"\t");
 	    	}
 	    	System.out.println();
 	    }

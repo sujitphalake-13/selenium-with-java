@@ -37,17 +37,24 @@ public class SelectDropdown {
 		selectDrp.selectByIndex(4);
 		
 		// Select Options selectByValue()
-        selectDrp.selectByValue("japan");
+        selectDrp.selectByValue("india");
         
-        // getAll dropdown Element
+        // getAll dropdown Element using getOptions()
         List<WebElement> drpOptions = selectDrp.getOptions();
         int count = drpOptions.size();
         System.out.println("Count of WebElement in dropdown :"+count);
         
+        for( int i = 0 ; i < drpOptions.size() ; i++ ) {
+        	String ele = drpOptions.get(i).getText();
+        	System.out.println(ele);
+        }
+        
+        // Enhanced for loop
+        /*
         for(WebElement option :drpOptions) {
         	System.out.println(option.getText());
         }
-        
+        */
 	}
 
 }
