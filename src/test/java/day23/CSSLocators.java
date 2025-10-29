@@ -31,7 +31,7 @@ public class CSSLocators {
 
 		// 7. tag class attribute ---> tag.className[attribute='value']
 		//driver.findElement(By.cssSelector("input.search-box-text[name='q']")).sendKeys("T-Shirts");
-		//driver.findElement(By.cssSelector(".search-box-text[name='q']")).sendKeys("T-Shirts");
+		driver.findElement(By.cssSelector(".search-box-text[name='q']")).sendKeys("T-Shirts");
 
 		// 8. close browser
 		driver.close();
