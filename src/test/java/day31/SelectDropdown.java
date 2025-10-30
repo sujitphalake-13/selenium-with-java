@@ -55,6 +55,9 @@ public class SelectDropdown {
         	System.out.println(option.getText());
         }
         */
+        
+        // Close driver
+        driver.close();
 	}
 
 }
